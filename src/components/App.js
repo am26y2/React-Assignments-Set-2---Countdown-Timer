@@ -15,14 +15,14 @@ const App = () => {
     }
     return;
   };
-  const tick = () => {
+  const decrease = () => {
     clearInterval(timerID);
     if (timer <= 0) {
       return;
     }
     setTimer((prevValue) => prevValue - 1);
   };
-  let timerID = setInterval(tick, 1000);
+  let timerID = setInterval(decrease, 1000);
 
   return (
     <div className="wrapper">
