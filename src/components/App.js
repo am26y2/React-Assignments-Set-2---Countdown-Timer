@@ -32,7 +32,7 @@ const App = () => {
           <input id="timeCount" onKeyDown={handleEnter} /> sec.
         </h1>
       </div>
-      <div id="current-time">{time}</div>
+      <div id="current-time">{timer}</div>
     </div>
   );
 };
